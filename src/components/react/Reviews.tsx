@@ -180,7 +180,7 @@ const Reviews = () => {
                 <div className='p-5 gap-3 w-full flex flex-col justify-start bg-[#0C0B0E] border-[#151518] border-[1.5px] rounded-xl'>
                   <div className='flex justify-center items-center gap-2 w-min'>
                     {Array(5).fill(0).map((_, i) => (
-                      <div key={i} className='h-6 w-6 bg-green-400 flex justify-center items-center'>
+                      <div key={i} className='h-6 w-6 flex justify-center items-center text-[#FEC84B]'>
                         <GoStarFill />
                       </div>
                     ))}

@@ -10,7 +10,7 @@ import ModelSection from "./ModelSection"
 // import ModelSection from "./ModelSelection"
 import Reviews from "./Reviews"
 import Testimonial from "./Testimonial"
-import TunnelSection from "./TunnelSection"
+import TrafficInsights from "./TrafficInsights"
 import { ReactLenis, useLenis } from 'lenis/react'
 import { useEffect, useRef } from "react"
 
@@ -75,7 +75,7 @@ export const App = () => {
         <Header />
         <Hero />
         <InfiniteMarqueeComponent />
-        <TunnelSection />
+        <TrafficInsights />
         <Reviews />
         <ModelSection />
         <Footer />

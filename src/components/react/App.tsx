@@ -11,6 +11,7 @@ import ModelSection from "./ModelSection"
 import Reviews from "./Reviews"
 import Testimonial from "./Testimonial"
 import TrafficInsights from "./TrafficInsights"
+import Solutions from "./Solutions"
 import { ReactLenis, useLenis } from 'lenis/react'
 import { useEffect, useRef } from "react"
 
@@ -69,13 +70,16 @@ export const App = () => {
 
   return (
     <ReactLenis root>
-      <div className="overflow-hidden relative bg-gradient-to-b from-[#0A0A0A] to-[#121212] text-white">
+      <div className="bg-gradient-to-b from-[#0A0A0A] to-[#121212] text-white">
         <div ref={cursorRef} className="pointer fixed top-0 left-0 w-[12px] h-[12px] bg-white rounded-full pointer-events-none z-[9999]"
         ></div>
         <Header />
         <Hero />
+        <div className="overflow-hidden">
         <InfiniteMarqueeComponent />
+        </div>
         <TrafficInsights />
+        <Solutions />
         <Reviews />
         <ModelSection />
         <Footer />

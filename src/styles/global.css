@@ -54,16 +54,15 @@
   transform: translateX(-50%);
   background: linear-gradient(
       to bottom,
-      #ffffff28 0%,
-      #ffffff29 100%
+      #ffffff10 0%,
+      #ffffff30 100%
     ),
     
       repeating-linear-gradient(
         0deg,
         #ffffff12 0px,
         #ffffff14 1px,
-        #ffffff16 2px,
-        transparent 3px
+        #ffffff16 2px
       );
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   backdrop-filter: blur(20px);
@@ -95,7 +94,7 @@
   }
   100% {
     opacity: .6;
-    filter: blur(25px);
+    filter: blur(30px);
   }
 }
 

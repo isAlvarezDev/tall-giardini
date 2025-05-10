@@ -59,12 +59,16 @@ const FadeUpItem: React.FC<FadeUpItemProps> = ({
 const TrafficInsights = () => {
   return (
     <section className="py-12 px-4 sm:px-6 lg:px-8 mt-4 relative overflow-hidden bg-[#0c0c0c]">
+      <FadeUpItem delay={50}>
       <h1 className="text-center text-5xl mt-6 font-bold text-shadow">
         Tráfico Sin Conversión
       </h1>
+      </FadeUpItem>
+      <FadeUpItem delay={80}>
       <h2 className="text-center text-gray-400 mt-2 mb-6 md:mb-12 font-semibold">
         Las razones por las que tu tráfico no se convierte en ventas
       </h2>
+      </FadeUpItem>
       {/* Contenedor del grid con imagen de borde */}
       <FadeUpItem delay={100}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative after:content-[''] after:absolute after:top-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#222b] after:to-transparent before:content-[''] before:absolute before:bottom-0 before:w-full before:h-0.5 before:bg-gradient-to-l before:from-transparent before:via-[#222b] before:to-transparent after:-z-0 before:-z-0">

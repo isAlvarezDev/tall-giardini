@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 
-interface SolutionItem {
+interface TailoredSolutionItem {
   title: string;
   description: string;
 }
 
-const data: SolutionItem[] = [
+const data: TailoredSolutionItem[] = [
   {
     title: "No hacemos plantillas",
     description:
@@ -28,7 +28,7 @@ const data: SolutionItem[] = [
   },
 ];
 
-const Solutions = () => {
+const TailoredSolutions = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -121,4 +121,4 @@ const Solutions = () => {
   );
 };
 
-export default Solutions;
+export default TailoredSolutions;

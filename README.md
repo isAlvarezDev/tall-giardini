@@ -40,6 +40,7 @@ The following modifications were implemented in the project:
 * **`Hero` Component**:
     * The text styling was updated, including a darker gradient for the typography.
     * The button gradient was reversed (purple-to-blue) to contrast with the navbar button.
+    * Removed background color from the text: "Revoluciona tu estrategia digital"
 * **"Tráfico sin conversión" Section (Component `TunnelSection` renamed to `TrafficInsights`)**:
     * The original `TunnelSection` component was renamed to `TrafficInsights` for better modularity and semantic clarity.
     * A new design and content were integrated, inspired by the "Unlock Your Team's Potential" section from the following reference: [https://suprema.framer.website/](https://suprema.framer.website/)

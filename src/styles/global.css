@@ -11,6 +11,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  cursor: url('/cursor.svg'), auto;
+}
+
+body::selection {
+  background-color: #2563eb;
+}
+
 .tunnelSection-title1 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
 }

@@ -97,16 +97,16 @@ const TailoredSolutions = () => {
   return (
     <section 
       ref={containerRef}
-      className="my-14 md:my-[84px] md:grid md:grid-cols-2 max-w-7xl mx-auto relative"
+      className="my-8 md:my-[54px] md:grid md:grid-cols-2 max-w-7xl mx-auto relative"
     >
-      <div className="max-md:mb-12 md:sticky md:top-[86px] md:self-start z-10">
+      <div className="max-md:mb-12 md:sticky md:top-[46px] pt-[30px] md:self-start z-10">
           <h1 className="max-md:text-center text-3xl md:text-4xl font-bold px-8 animate-[pulse_4500ms_linear_infinite]">
             Diseñamos sistemas digitales a medida <span className="text-white/40">que convierten tráfico en
             ventas.</span>
           </h1>
       </div>
 
-      <div className="space-y-10 px-8 z-10">
+      <div className="space-y-10 pt-[30px] px-8 z-10 md:border-l md:border-gray-300 md:border-opacity-30">
         <h2 className="text-2xl md:text-3xl font-semibold">Nuestra solución</h2>
         <div className="h-[1px] bg-gray-300 w-full opacity-30"></div>
 

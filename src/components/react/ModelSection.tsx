@@ -54,9 +54,9 @@ const ModelSection = () => {
       }
     }
 
-    const card1Cleanup = cardActions(card1.current, 'rgba(18, 198, 84, 0.65)')
-    const card2Cleanup = cardActions(card2.current, 'rgba(217, 203, 37, 0.65)')
-    const card3Cleanup = cardActions(card3.current, 'rgba(14, 212, 223, 0.65)')
+    const card1Cleanup = cardActions(card1.current, 'rgba(37, 99, 235, 0.60)')
+    const card2Cleanup = cardActions(card2.current, 'rgba(92, 75, 235, 0.60)')
+    const card3Cleanup = cardActions(card3.current, 'rgba(147, 51, 234, 0.60)')
 
     return () => {
       card1Cleanup?.()

@@ -30,6 +30,8 @@ The following modifications were implemented in the project:
 * **`App` Component**:
     * The cursor pointer effect was removed.
     * A top-to-bottom gradient (`from-[#0A0A0A] to-[#121212]`) was added to the background.
+* **`Header` Component**:
+    * The hover effect of the main button in the header was modified to improve visual interaction.
 * **`Global.css`**:
     * Highlighted words now use a background color of #2563eb.
     * The default cursor was replaced with a custom SVG (cursor.svg).
@@ -61,8 +63,6 @@ The following modifications were implemented in the project:
     * The hover effect of the `<span>` containing the text "mejores herramientas" was modified.
 * **`InfiniteMarqueeComponent` (in `App.tsx`)**:
     * The `InfiniteMarquee` component was wrapped within a `<div>` with `overflow: hidden` to enable the `TailoredSolutions` component to function correctly with a `sticky` scroll effect.
-* **`Header` Component**:
-    * The hover effect of the main button in the header was modified to improve visual interaction.
 
 ## External Templates and Fragments Used
 

@@ -19,7 +19,7 @@ const reviews = [
     name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
     href: '#',
     icon: <FaXTwitter />
   },
@@ -27,7 +27,7 @@ const reviews = [
     name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
     href: '#',
     icon: <FaXTwitter />
   },
@@ -35,7 +35,7 @@ const reviews = [
     name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
     href: '#',
     icon: <FaXTwitter />
   },
@@ -43,7 +43,7 @@ const reviews = [
     name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
     href: '#',
     icon: <FaXTwitter />
   },
@@ -51,7 +51,7 @@ const reviews = [
     name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
     href: '#',
     icon: <FaXTwitter />
   },
@@ -59,7 +59,7 @@ const reviews = [
     name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
     href: '#',
     icon: <FaXTwitter />
   },
@@ -67,7 +67,7 @@ const reviews = [
     name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
     href: '#',
     icon: <FaXTwitter />
   },
@@ -75,7 +75,7 @@ const reviews = [
     name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
     href: '#',
     icon: <FaXTwitter />
   },
@@ -203,12 +203,12 @@ const Reviews = () => {
                   </div>
                   <div className='flex justify-center items-center gap-0.5 w-min'>
                     {Array(5).fill(0).map((_, i) => (
-                      <div key={i} className='h-6 w-6 flex justify-center items-center text-[#FEC84B]'>
+                      <div key={i} className='h-6 w-6 flex justify-center items-center text-white'>
                         <GoStarFill />
                       </div>
                     ))}
                   </div>
-                  <blockquote className='w-[100%] text-gray-200/80 text-[15px] text-pretty'>{review.text}</blockquote>
+                  <blockquote className='w-[100%] text-gray-200/80 text-[15px] text-pretty'>"{`${review.text}`}"</blockquote>
                   <div className="my-3 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent w-48"></div>
                     <p className='font-bold text-sm md:text-base'>{review.name}</p>
                     <time className='-mt-2 text-white/80 text-sm'>{review.date}</time>

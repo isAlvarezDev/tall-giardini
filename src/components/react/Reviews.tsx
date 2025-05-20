@@ -11,56 +11,73 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import SplitType from 'split-type'
 import gsap from 'gsap'
+import { FaXTwitter } from 'react-icons/fa6'
 
 
 const reviews = [
   {
-    name: 'Jeannie Grant',
+    name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
+    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    href: '#',
+    icon: <FaXTwitter />
   },
   {
-    name: 'Jeannie Grant',
+    name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
+    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    href: '#',
+    icon: <FaXTwitter />
   },
   {
-    name: 'Jeannie Grant',
+    name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
+    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    href: '#',
+    icon: <FaXTwitter />
   },
   {
-    name: 'Jeannie Grant',
+    name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
+    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    href: '#',
+    icon: <FaXTwitter />
   },
   {
-    name: 'Jeannie Grant',
+    name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
+    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    href: '#',
+    icon: <FaXTwitter />
   },
   {
-    name: 'Jeannie Grant',
+    name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
+    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    href: '#',
+    icon: <FaXTwitter />
   },
   {
-    name: 'Jeannie Grant',
+    name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
+    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    href: '#',
+    icon: <FaXTwitter />
   },
   {
-    name: 'Jeannie Grant',
+    name: 'Jeannie Grant - CEO',
     date: 'June 01, 2023',
     img: './person.jpg',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis.',
+    text: '"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa quis odio nisi, labore officiis ullam voluptas fuga, placeat sunt rem, consequatur nobis."',
+    href: '#',
+    icon: <FaXTwitter />
   },
 ]
 
@@ -177,22 +194,24 @@ const Reviews = () => {
           >
             {reviews.map((review, index) => (
               <SwiperSlide key={index}>
-                <div className='p-5 gap-3 w-full flex flex-col justify-start bg-gradient-to-tr from-transparent to-[#1c1c1c] rounded-xl'>
-                  <div className='flex justify-center items-center gap-2 w-min'>
+                <div className='p-5 gap-3 w-full flex flex-col justify-start bg-gradient-to-tr from-transparent to-[#1c1c1c] rounded-xl text-gray-600 hover:text-[#f8f8f8] transition-colors duration-500 border border-[#ffffff18]'>
+                  <div className='flex items-center justify-between'>
+                    <img className='w-[50px] h-[50px] rounded-full' src={review.img} alt={review.name} />
+                    <a href={review.href} className='text-2xl'>
+                      {review.icon}
+                    </a>
+                  </div>
+                  <div className='flex justify-center items-center gap-0.5 w-min'>
                     {Array(5).fill(0).map((_, i) => (
                       <div key={i} className='h-6 w-6 flex justify-center items-center text-[#FEC84B]'>
                         <GoStarFill />
                       </div>
                     ))}
                   </div>
-                  <p className='w-[100%]'>{review.text}</p>
-                  <div className='flex items-center gap-3'>
-                    <img className='w-[50px] h-[50px] rounded-full' src={review.img} alt={review.name} />
-                    <div>
-                      <p className='font-bold'>{review.name}</p>
-                      <p className='-mt-2 text-white/80'>{review.date}</p>
-                    </div>
-                  </div>
+                  <blockquote className='w-[100%] text-gray-200/80 text-[15px] text-pretty'>{review.text}</blockquote>
+                  <div className="my-3 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent w-48"></div>
+                    <p className='font-bold text-sm md:text-base'>{review.name}</p>
+                    <time className='-mt-2 text-white/80 text-sm'>{review.date}</time>
                 </div>
               </SwiperSlide>))}
 

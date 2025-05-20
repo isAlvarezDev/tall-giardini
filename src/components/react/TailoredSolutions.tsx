@@ -31,7 +31,7 @@ const data: TailoredSolutionItem[] = [
   },
   {
     img: <Funnel />,
-    tag: "Crecimiento sistematizado",
+    tag: "Crecimiento real",
     title: "Hacemos crecer marcas con procesos reales",
     description:
       "Construimos embudos estratégicos que guían a tus clientes ideales desde el primer contacto hasta la compra. Sin suposiciones, solo procesos probados que generan ventas recurrentes.",

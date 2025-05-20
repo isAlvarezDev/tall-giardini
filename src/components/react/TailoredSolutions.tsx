@@ -1,27 +1,37 @@
-import { useEffect, useRef } from "react";
-
+import { useEffect, useRef, type ReactElement } from "react";
+import { Brush, ChartBar, BadgeCheck, Funnel } from "lucide-react";
 interface TailoredSolutionItem {
+  img: ReactElement;
+  tag: string;
   title: string;
   description: string;
 }
 
 const data: TailoredSolutionItem[] = [
   {
+    img: <Brush />,
+    tag: "Personalizado",
     title: "No hacemos plantillas",
     description:
       "Cada marca es única. Diseñamos estrategias personalizadas desde cero, adaptadas a tus clientes reales y tus metas específicas. Nada de copiar-pegar.",
   },
   {
+    img: <ChartBar />,
+    tag: "Decisiones informadas",
     title: "No improvisamos. Construimos sobre datos.",
     description:
       "Cada decisión está respaldada por analytics y pruebas reales. Usamos lo que tus números revelan para diseñar embudos que escalan tu negocio, no suposiciones.",
   },
   {
+    img: <BadgeCheck />,
+    tag: "Transparencia total",
     title: "No hacemos promesas vacías",
     description:
       "Cero humo. Solo resultados medibles: embudos que convierten, clientes cualificados y crecimiento sostenible. Te mostramos los datos reales.",
   },
   {
+    img: <Funnel />,
+    tag: "Crecimiento sistematizado",
     title: "Hacemos crecer marcas con procesos reales",
     description:
       "Construimos embudos estratégicos que guían a tus clientes ideales desde el primer contacto hasta la compra. Sin suposiciones, solo procesos probados que generan ventas recurrentes.",
@@ -111,8 +121,16 @@ const TailoredSolutions = () => {
         <div className="h-[1px] bg-gray-300 w-full opacity-30"></div>
 
         {data.map((item, index) => (
-          <div key={index} className="space-y-4">
-            <h3 className="text-xl md:text-2xl font-medium">{item.title}</h3>
+          <div key={index} className="bg-[linear-gradient(to_bottom_right,#2563eb19_5%,#0D0D0D_20%,#0D0D0D_80%,#9333ea19_95%)] p-10 rounded-xl border border-[#ffffff18] scroll-animation">
+            <div className="flex justify-between items-center mb-7">
+              {item.img}
+              <div className="relative after:absolute after:content-[''] after:w-8 after:left-[50%] after:translate-x-[-50%] after:h-[1px] after:bg-gray-600 after:top-0 max-md:text-sm md:text-base bg-blue-500/10 py-2 px-3 rounded-xl text-[#e8e8e8]">
+                <span>{item.tag}</span>
+              </div>
+              
+            </div>
+            <h3 className="text-xl md:text-2xl font-medium my-5">{item.title}</h3>
+            <div className="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent w-48 mb-5"></div>
             <p className="text-white/50">{item.description}</p>
           </div>
         ))}

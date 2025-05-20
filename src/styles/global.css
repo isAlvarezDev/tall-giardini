@@ -53,6 +53,23 @@ body::selection {
     border-image: linear-gradient(to top, #222b, transparent) 0 100;
 }
 
+.scroll-animation {
+  animation: reveal linear forwards;
+  animation-timeline: view(block);
+  animation-range: 90vh 100vh;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  100% {
+    opacity: .5;
+    filter: blur(5px);
+  }
+}
+
 .glow-trapezoid {
   width: 78px;
   height: 48px;
